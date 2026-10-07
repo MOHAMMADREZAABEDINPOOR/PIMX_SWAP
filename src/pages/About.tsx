@@ -1,0 +1,6 @@
+import type { Translate } from '../i18n';
+import { errorKey } from '../i18n';
+import { Icon, Logo } from '../components/Icon';
+export function About({ t, version, errors, diagnostics }: { t: Translate; version: string; errors: string[]; diagnostics: boolean }) {
+  return <div className="page-content about-page"><div className="about-mark"><Logo size={84} /></div><span className="eyebrow">PIMXSWAP</span><h1>{t('aboutTitle')}</h1><p className="about-lead">{t('aboutDescription')}</p><span className="version">{t('version')} <bdi>{version}</bdi> · {t('builtWith')}</span><div className="about-cards">{([{ icon: 'shield', title: 'privateTitle', body: 'privateBody' }, { icon: 'keyboard', title: 'engineTitle', body: 'engineBody' }, { icon: 'info', title: 'limitsTitle', body: 'limitsBody' }] as const).map(item => <section className="settings-section" key={item.title}><Icon name={item.icon} size={24} /><h2>{t(item.title)}</h2><p>{t(item.body)}</p></section>)}</div><p className="hint">{t('resourceNote')}</p>{diagnostics && <section className="settings-section"><h2>{t('diagnostics')}</h2>{errors.length ? errors.map(e => <p key={e}><code>{e}</code> — {t(errorKey(e))}</p>) : <p>{t('noErrors')}</p>}</section>}</div>;
+}

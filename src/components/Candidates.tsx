@@ -1,0 +1,6 @@
+import type { Analysis } from '../lib/types';
+import type { Translate } from '../i18n';
+import { Icon } from './Icon';
+export function Candidates({ analysis, global, busy, onChoose, onCancel, t }: { analysis: Analysis; global: boolean; busy: boolean; onChoose: (index: number) => void; onCancel: () => void; t: Translate }) {
+  return <section className="candidate-panel" aria-label={t('candidates')}><div className="section-heading"><div><span className="eyebrow">{global ? t('globalSelection') : t('auto')}</span><h2>{t('candidates')}</h2></div><button className="quiet" onClick={onCancel}>{t('cancel')}</button></div><p>{t('candidateDescription')}</p><div className="candidate-list">{analysis.candidates.map((c, index) => <article className="candidate" key={`${c.target}-${index}`}><div className="candidate-meta"><strong>{c.name}</strong><span className="score">{t('confidence')} <bdi>{Math.round(c.confidence * 100)}%</bdi></span></div><p className="candidate-text" dir="auto">{c.text}</p><div className="candidate-bottom"><small>{t(c.reason === 'word_evidence' ? 'word_evidence' : 'pattern_evidence')}</small><button className="secondary" disabled={busy} onClick={() => onChoose(index)}>{global ? t('replaceSelection') : t('apply')}<Icon name="arrow" /></button></div></article>)}</div><small className="hint">{t('heuristic')}</small></section>;
+}

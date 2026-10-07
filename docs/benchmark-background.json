@@ -1,0 +1,9 @@
+﻿{
+    "SampleSeconds":  10,
+    "NativeCpuPercent":  0,
+    "NativeWorkingSetMB":  16.02,
+    "NativePrivateMB":  2.23,
+    "ProcessCount":  1,
+    "TotalWorkingSetMB":  16.02,
+    "ProcessNames":  "PIMXSWAP"
+}
