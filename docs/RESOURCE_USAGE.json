@@ -1,0 +1,104 @@
+﻿{
+    "measured_utc":  "2026-10-07T19:45:21.3945036Z",
+    "state":  "Idle background tray; editor closed; process tree included",
+    "architecture":  "Windows x64",
+    "executable_sha256":  "21f775a1c7e9805b8e093c125b9d9bbf9d2d3f6898f5aad421d63c958d043eb8",
+    "sample_count":  10,
+    "measurement_seconds":  11.37,
+    "working_set_mib_min":  12.85,
+    "working_set_mib_max":  12.85,
+    "working_set_mib_mean":  12.85,
+    "native_cpu_percent":  0,
+    "samples":  [
+                    {
+                        "seconds":  1.38,
+                        "working_set_mib":  12.85,
+                        "private_bytes_mib":  2.23,
+                        "process_count":  1,
+                        "process_names":  [
+                                              "PIMXSWAP"
+                                          ]
+                    },
+                    {
+                        "seconds":  2.52,
+                        "working_set_mib":  12.85,
+                        "private_bytes_mib":  2.23,
+                        "process_count":  1,
+                        "process_names":  [
+                                              "PIMXSWAP"
+                                          ]
+                    },
+                    {
+                        "seconds":  3.64,
+                        "working_set_mib":  12.85,
+                        "private_bytes_mib":  2.23,
+                        "process_count":  1,
+                        "process_names":  [
+                                              "PIMXSWAP"
+                                          ]
+                    },
+                    {
+                        "seconds":  4.74,
+                        "working_set_mib":  12.85,
+                        "private_bytes_mib":  2.23,
+                        "process_count":  1,
+                        "process_names":  [
+                                              "PIMXSWAP"
+                                          ]
+                    },
+                    {
+                        "seconds":  5.84,
+                        "working_set_mib":  12.85,
+                        "private_bytes_mib":  2.23,
+                        "process_count":  1,
+                        "process_names":  [
+                                              "PIMXSWAP"
+                                          ]
+                    },
+                    {
+                        "seconds":  6.97,
+                        "working_set_mib":  12.85,
+                        "private_bytes_mib":  2.23,
+                        "process_count":  1,
+                        "process_names":  [
+                                              "PIMXSWAP"
+                                          ]
+                    },
+                    {
+                        "seconds":  8.07,
+                        "working_set_mib":  12.85,
+                        "private_bytes_mib":  2.23,
+                        "process_count":  1,
+                        "process_names":  [
+                                              "PIMXSWAP"
+                                          ]
+                    },
+                    {
+                        "seconds":  9.17,
+                        "working_set_mib":  12.85,
+                        "private_bytes_mib":  2.23,
+                        "process_count":  1,
+                        "process_names":  [
+                                              "PIMXSWAP"
+                                          ]
+                    },
+                    {
+                        "seconds":  10.26,
+                        "working_set_mib":  12.85,
+                        "private_bytes_mib":  2.23,
+                        "process_count":  1,
+                        "process_names":  [
+                                              "PIMXSWAP"
+                                          ]
+                    },
+                    {
+                        "seconds":  11.37,
+                        "working_set_mib":  12.85,
+                        "private_bytes_mib":  2.23,
+                        "process_count":  1,
+                        "process_names":  [
+                                              "PIMXSWAP"
+                                          ]
+                    }
+                ]
+}
